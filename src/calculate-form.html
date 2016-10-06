@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Р-Гарнет</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#fff">
+  <link rel="stylesheet" media="all" href="css/style.css" >
+  
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+  //=include partials/header.html
+
+  <main class="main main_form-page">
+    <form class="container calculate-form">
+      <h1>ПОДОБРАТЬ СТАНОК ГИДРОРЕЗКИ</h1>
+
+      <fieldset class="row calc-form-row-1">
+        <div class="col-md-4 col-md-offset-2 col-sm-6 calc-form-row-1-left">
+          <label class="button-radio"><input type="radio" name="typeMachine">
+            <span class="radio-btn">Консольный</span>
+          </label>
+          <label class="button-radio"><input type="radio" name="typeMachine" checked>
+            <span class="radio-btn">Портальный</span>
+          </label>
+          <a href="#" class="upload-link"><span class="icon-upload-2"></span>Скачать каталог</a>
+        </div>
+        <div class="col-md-4 col-md-offset-1 col-sm-6 calc-form-row-1-right">
+          <div class="calc-form-row-1__img">
+            <img src="img/form-calc-1.jpg" alt="Консольный">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="calc-form-row-2">
+        <h2>Рабочий стол</h2>
+        <div class="row">
+          <div class="col-md-5">
+            <label class="label">Выбор размера рабочей зоны:</label>
+            <div class="inline-select">
+              <div class="form-group">
+                <select class="form-control" name="workZoneSizeX" id="workZoneSizeX">
+                  <option value="0.05">0.05</option>
+                  <option value="0.1">0.1</option>  
+                  <option value="0.015">0.15</option>      
+                </select>
+                <span class="help">По оси Х</span>
+              </div>
+              <div class="form-group">
+                <select class="form-control" name="workZoneSizeY" id="workZoneSizeY">
+                  <option value="0.05">0.05</option>
+                  <option value="0.1">0.1</option>  
+                  <option value="0.015">0.15</option>      
+                </select>
+                <span class="help">По оси Y</span>
+              </div>
+              <div class="form-group">
+                <select class="form-control" name="workZoneSizeZ" id="workZoneSizeZ">
+                  <option value="0.05">0.05</option>
+                  <option value="0.1">0.1</option>  
+                  <option value="0.015">0.15</option>      
+                </select>
+                <span class="help">По оси Z</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <h4 class="label">Опции рабочего стола:</h4>
+            <p><b><i>Система удаления шлама</i></b> - Бункер и шламовый насос для удаления и пакетирования использованного абразива из ванны станка.</p>
+            <div class="row">
+              <div class="col-md-1">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    <span class="c-radio"></span>
+                    <b>Нет</b>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" checked>
+                    <span class="c-radio"></span>
+                    <b>Односекционная</b>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option1" checked>
+                    <span class="c-radio"></span>
+                    <b>Двухсекционная</b> (позволяет менять заполненные биг-бэги без остановки станка)
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios4" value="option1" checked>
+                    <span class="c-radio"></span>
+                    <b>Двухсекционная с двумя шламовыми насосами</b> (используется для рабочих столов площадью более 16м2)
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value=""><span class="c-box"></span>
+                <b>Система автоматической загрузки листа</b> - Используется для помещений с низкими потолками,  позволяет загружать лист на рабочий стол без использования кран-балки, нет необходимости 
+                кантовать хрупкие материалы.
+                Option one is this and that&mdash;be sure to include why it's great
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value=""><span class="c-box"></span>
+                <b>Система быстрого подъема воды</b> - Позволяет регулировать уровень воды в ванной до 100 мм, 
+                используется при раскрое материалов высотой от 30мм. Снижение уровня шума и 
+                разбрызгивания в процессе  резки.
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value=""><span class="c-box"></span>
+                <b>Улавливающая сеть</b>  - Устанавливается под опорные решетки рабочего стола, служит для улавливания мелких деталей.
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <hr>
+
+      <fieldset class="calc-form-row-3">
+        <h2>Варианты режущих голов</h2>
+        <label class="label">Варианты режущих голов:</label>
+
+        <div class="row">
+          <div class="col-md-4">
+            
+            <div class="form-group">
+              <select name="cutRow" id="cutRow" class="form-control">
+                <option value="">3-х осевая</option>
+                <option value="">3-х осевая</option>
+                <option value="">3-х осевая</option>
+              </select>
+            </div>
+
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios2" id="optionsRadios5" value="option1" checked>
+                <span class="c-radio"></span>
+                Одинарная
+              </label>
+            </div>
+
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios2" id="optionsRadios6" value="option1">
+                <span class="c-radio"></span>
+                Двойная
+              </label>
+            </div>
+
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios2" id="optionsRadios7" value="option1">
+                <span class="c-radio"></span>
+                Две независимые
+              </label>
+            </div>
+
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios2" id="optionsRadios8" value="option1">
+                <span class="c-radio"></span>
+                Четыре независимые
+              </label>
+            </div>
+          </div>
+          <div class="col-md-6 col-md-offset-1">
+            <div class="form-calc__figure row">
+              <div class="form-calc__figure-img">
+                <img src="img/form-calc-2.jpg" alt="">
+              </div>
+              <div class="form-calc__figure-content">
+                <p><b><i>3-х осевая режущая голова</i></b></p>
+                <p>Для раскроя на плоскости</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <label class="label">Опции режущей головы:</label>
+          <p><b><i>Система подачи абразива:</i></b></p>  
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios4" id="optionsRadios9" value="option1" checked><span class="c-radio"></span>
+              <b>100 л</b> - Бункер автоматической подачи гранатового абразива с помощью сжатого воздуха с датчиком нижнего уровня  (100 л~170 кг) 
+              <br><br>
+              <img src="img/form-calc-3.jpg" alt="">
+            </label>
+          </div>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios4" id="optionsRadios10" value="option1"><span class="c-radio"></span>
+              <b>200 л</b> - Бункер автоматической подачи гранатового абразива с помощью сжатого воздуха с датчиком нижнего уровня  (200 л~340 кг)
+              <br><br>
+              <img src="img/form-calc-4.jpg" alt="">
+            </label>
+          </div>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="optionsRadios11" value="option1"><span class="c-radio"></span>
+              <b>1000 кг</b> - Бункер хранения гранатового абразива емкостью в один стандартный BigBad. С вертикальной загрузкой кран-балкой.
+              <br><br>
+              <img src="img/form-calc-5.jpg" alt="">
+            </label>
+          </div>
+
+          <p><b><i>Сверлильная головка :</i></b></p>  
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios4" id="optionsRadios12" value="option1" checked><span class="c-radio"></span>
+              <b>Сверлильная головка (пневматическая) </b> - Сверлильная головка устанавливается рядом с режущей 
+              головой, используется для изготовления отверстий для вреза в композитные материалы и в вязкие 
+              материалы. 
+            </label>
+          </div>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios4" id="optionsRadios13" value="option1"><span class="c-radio"></span>
+              <b>Сверлильно-гравировальная (электрическая) </b>- Сверлильно-гравировальная головка 
+              устанавливается рядом с режущей головой, используется для гравирования и сверления 
+              отверстий до 8мм.
+            </label>
+          </div>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios4" id="optionsRadios14" value="option1"><span class="c-radio"></span>
+              <b>Система контроля высоты </b>- Система, позволяющая автоматически устанавливать высоту 
+              режущей головы и контролировать неровности  листа для предотвращения  столкновения 
+              с режущей головой
+            </label>
+          </div>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios4" id="optionsRadios15" value="option1"><span class="c-radio"></span>
+              <b>Система лазерного позиционирования </b> - Позволяет быстро и точно определять машинный 
+              0» по координатам X и Y.
+              <br><br>
+              <img src="img/form-calc-6.jpg" alt="">
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <hr>
+      <fieldset class="calc-form-row-4">
+        <h2>Системы высокого давления</h2>
+        <label class="label ">Системы высокого давления:</label>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <select name="systemPushed" id="systemPushed" class="form-control">
+                <option value="">Насос высокого давления Trump Line 50/420</option>
+                <option value="">Насос высокого давления Trump Line 50/420</option>
+              </select>
+            </div>
+            <h4 class="label">Опции насоса:</h4>
+            <p class="loghten"><b><i>Система масло-охлаждения:</i></b></p>
+            <p><b>Система принудительного охлаждения</b> - 
+              Поддерживает температуру масла не выше +20˚ 
+              С окружающей среды, что позволяет 
+              поддерживать длительную работу 
+              мультипликатора без перерывов
+              </p>
+
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value=""><span class="c-box"></span>
+                <b><i>Воздушное</i></b> – Радиатор с принудительным 
+                воздушным охлаждением. Обладает 
+                достаточной теплоотдачей для использования 
+                в климатических условиях Российской 
+                Федерации.
+                <br><br>
+                <img src="img/form-calc-7.jpg" alt="">
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value=""><span class="c-box"></span>
+                <b><i>Водяное</i></b> – Компактный радиатор, охлаждаемый 
+                проточной водой. Используется для работы в 
+                помещениях с температурой выше +40⁰С.
+                <br><br>
+                <img src="img/form-calc-8.jpg" alt="">
+              </label>
+            </div>
+          </div>
+
+          <div class="col-md-6 ln-md">
+            <p> 
+              <b>Экономичный вариант для работы в одну смену.</b><br>
+              <b>Межсервисный интервал обслуживания</b> -  350-500 моточасов<br>
+              <b> Мультипликатор выс. давления</b> – Taiwan O.H.P. 50 hp
+              intensifier <br>
+              <b>Электродвигатель, электронный блок управления</b> – 
+              Siemens. <br>
+              <b>Гидравлические клапана, трубопроводы</b> – SUNNY, DERY.<br>
+              <b>Макс. давление:</b> 420 МПа (60 000 psi).<br>
+              <b>Оптимальное рабочее давление:</b> 350-380 МПа, (50 000  –  55 000 psi).<br>
+              <b>Номинальная мощность:</b> 37 КВт (50 л.с.) 380 В / 50 Гц, 80 А.<br>
+              <b>Макс. диаметр струи:</b> 0.36 мм.<br>
+              <b>Производительность:</b> 3,8 л/мин.<br>
+              <b>Система контроля давления:</b> автоматический контроль давления низкое/высокое (70-380 МПа).<br>
+              <b>Данные отображаемые на передней панели насоса: </b><br>
+              <b>Давление:</b> входное, промежуточное , выходное, температура масла.<br>
+              <b>Программируемый контроллер  Siemens:</b>  контроль перегрузки гидравлической системы, температуры масла, давления на входе.<br>
+              <b>Пульт управления:</b> индикатор неисправностей, кнопка вкл/выкл мультипликатора, гидравлической системы, переключение управления на локальное/удаленное.
+            </p>
+          </div>
+        </div>
+        <p  class="loghten"><b><i>Система охлаждения воды:</i></b></p>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value=""><span class="c-box"></span>
+            <b><i>Система охлаждения воды</i></b> – Служит для охлаждения поступающей в насос  воды. Используется в жарких климатических условиях
+          </label>
+        </div>
+
+        <p class="loghten"><b><i>Система водоподготовки:</i></b></p>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value=""><span class="c-box"></span>
+            <b><i>Система водоподготовки</i></b> - Система ультрафильтрации, удаления известковых примесей и  умягчения воды.
+          </label>
+        </div>
+      </fieldset>
+
+      <hr>
+
+      <fieldset class="calc-form-row-5">
+        <h2>Опции Сервосистемы</h2>
+        <div class="checkbox">
+
+          <label>
+            <input type="checkbox" value=""><span class="c-box"></span>
+            <b><i>ПО IGEMS</i></b> - Комплект специально разработанного программного обеспечения для создания
+             чертежей для раскроя на станках гидроабразивной резки с использованием режущих голов 
+            3D в комплекте с постпроцессором усуществляет процесс перевода чертежей в машинный 
+            язык станка.
+
+          </label>
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value=""><span class="c-box"></span>
+            <b><i>Замена шарико-винтовой передачи  TBI на зубчатую рейку TST-KH (Тайвань)</i></b> - 
+            Зубчатая рейка TST-KH (Тайвань) обеспечивает большую скорость перемещения на холостых 
+            ходах режущей головы, что сокращает время на обработку, а плавность хода обеспечивает 
+            больший эксплуатационный ресурс. Рекомендуется к установке на осях длиной более 
+            4-х метров и высокой загрузке оборудования.
+
+          </label>
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value=""><span class="c-box"></span>
+            <b><i>Замена шарико-винтовой передачи  TBI на зубчатую рейку Güdel (Германия)</i></b> - 
+            Зубчатая рейка Gudel (Германия) обеспечивает большую скорость перемещения на холостых
+             ходах режущей головы, что сокращает время на обработку, а плавность хода обеспечивает 
+            больший эксплуатационный ресурс. Рекомендуется к установке на осях длиной более 
+            4-х метров и высокой загрузке оборудования. Лучшие, по сравнению с TST-KH, ресурсные 
+            характеристики.
+
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="calc-form-row-6">
+        <h1>ЗАПОЛНИТЕ ФОРМУ, ЧТОБ МЫ СМОГЛИ СВЯЗАТЬСЯ С ВАМИ И ОБСУДИТЬ ВАШ ЗАПРОС</h1>
+        <div class="row">
+          <div class="col-lg-3 col-lg-offset-3 col-md-4 col-md-offset-2 col-sm-6">
+            <div class="form-group required">
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="form-group required">
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <textarea class="form-control" cols="30" rows="5"></textarea>
+            </div>
+            
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="form-group required">
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="form-group required">
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <div class="capcha">
+                <div class="capcha__img">
+                  <img src="img/capcha.png" alt="">
+                </div>
+
+                <div class="capcha__field required">
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-action">
+              <div class="top-help required">Обязательно для заполнения</div>
+              <button class="btn btn-primary btn-block" type="submit">Применить</button>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </main>
+  
+  //=include partials/footer.html
+</div>
+<!-- END out-->
+<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
