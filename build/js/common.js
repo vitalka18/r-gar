@@ -7,6 +7,22 @@ $(document).ready(function() {
   });
 
   setEqualHeight($('.base-info-card__img-title'));
+
+  $('#lightboxModal').on('show.bs.modal', function (e) {
+    var $link = $(e.relatedTarget);
+    var $modal = $(e.target);
+    var $img = $modal.find('img');
+    $img.attr({src: $link.attr('data-img')});
+  });
+
+  $('#schemaMap').on('shown.bs.modal', function (e) {
+    var $link = $(e.relatedTarget);
+    var mapLat = $link.attr('data-lat') *1 ,
+        mapLang = $link.attr('data-lang') *1 ;
+
+    window.modalMap.setCenter([mapLat, mapLang]);
+    window.myModalPlacemark.geometry.setCoordinates([mapLat, mapLang]);
+  });
 });
 
 ymaps.ready(function () {
@@ -26,6 +42,25 @@ ymaps.ready(function () {
 
     myMap.geoObjects.add(myPlacemark);
     myMap.behaviors.disable('scrollZoom');
+  }
+
+  if ( $('#mapModal').length ) {
+    ymaps.ready(function () {
+      window.modalMap = new ymaps.Map('mapModal', {
+        center: [59.889708, 30.478156],
+        zoom: 14    
+      });
+
+      window.myModalPlacemark = new ymaps.Placemark(modalMap.getCenter(), {}, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/map-2.png',
+        iconImageSize: [44, 40],
+        iconImageOffset: [-22, -22]
+      });
+
+      modalMap.geoObjects.add(myModalPlacemark);
+      modalMap.behaviors.disable('scrollZoom');
+    });
   }
   
   if ( $('#mapContact').length ) {
@@ -51,13 +86,6 @@ ymaps.ready(function () {
       myContactMap.behaviors.disable('scrollZoom');
     });
   }
-
-  $('#lightboxModal').on('show.bs.modal', function (e) {
-    var $link = $(e.relatedTarget);
-    var $modal = $(e.target);
-    var $img = $modal.find('img');
-    $img.attr({src: $link.attr('data-img')});
-  });
 });
 
 

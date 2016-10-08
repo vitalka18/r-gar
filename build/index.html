@@ -26,7 +26,15 @@
               <a href="tel:78127031264" class="header__phone"><span class="icon-tel"></span>+7 (812) 703-12-64</a>
               <a href="mailto:info@r-garnet.ru" class="header__email"><span class="icon-mail"></span>info@r-garnet.ru</a>
             </div>
-            <div class="header__calback"><button class="btn btn-primary" data-toggle="modal" data-target="#callback">Заказать обратный звонок</button></div>
+            <div class="header__calback">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavigation" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <button class="btn btn-primary" data-toggle="modal" data-target="#callback">Заказать обратный звонок</button>
+            </div>
           </div>
   
           <div class="header__bottom">
@@ -51,7 +59,7 @@
       </div>
     </div>
   
-    <nav class="main-nav">
+    <nav class="main-nav collapse navbar-collapse" id="mainNavigation">
       <div class="container">
         <ul class="nav">
           <li class="nav__item"><a href="#" class="nav__link">О компании</a></li>
@@ -168,9 +176,11 @@
       </div>
 
       <div class="calculate">
-        расчитать <br> 
-        стоимость  <br>
-        станка
+        <a href="calculate-form.html">
+          расчитать <br> 
+          стоимость  <br>
+          станка
+        </a>
       </div>
 
       <div class="help-block">
@@ -187,18 +197,18 @@
       <div class="container">
         <h2 class="leasing__title">ЛУЧШИЙ <span>ЛИЗИНГ</span> ДЛЯ ВАС</h2>
         <div class="leasing__inner">
-          <div class="leasing__item"><a href="#" class="leasing__link">
+          <div class="leasing__item">
             <img src="img/bank1.jpg" height="84" width="293" alt="" class="leasing__img">
-          </a></div>
-          <div class="leasing__item"><a href="#" class="leasing__link">
+          </div>
+          <div class="leasing__item">
             <img src="img/bank2.jpg" height="84" width="230"  alt="" class="leasing__img">
-          </a></div>
-          <div class="leasing__item"><a href="#" class="leasing__link">
+          </div>
+          <div class="leasing__item">
             <img src="img/bank3.jpg" height="84" width="223"  alt="" class="leasing__img">
-          </a></div>
-          <div class="leasing__item"><a href="#" class="leasing__link">
+          </div>
+          <div class="leasing__item">
             <img src="img/bank4.jpg" height="84" width="256"  alt="" class="leasing__img">
-          </a></div>
+          </div>
         </div>
       </div>
     </div>
@@ -281,7 +291,7 @@
   
   <div class="modal fade" id="callback" tabindex="-1" role="dialog">
   
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-sm" role="document">
   
       <div class="modal-content">
   
@@ -322,6 +332,34 @@
             </div>
   
           </form>
+  
+        </div>
+  
+      </div><!-- /.modal-content -->
+  
+    </div><!-- /.modal-dialog -->
+  
+  </div><!-- /.modal -->
+  
+  
+  
+  <div class="modal fade" id="schemaMap" tabindex="-1" role="dialog">
+  
+    <div class="modal-dialog modal-sm" role="document">
+  
+      <div class="modal-content">
+  
+        <div class="modal-header">
+  
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  
+          <h4 class="modal-title">Схема проезда:</h4>
+  
+        </div>
+  
+        <div class="modal-body">
+  
+          <div id="mapModal" class="map modal-map"></div>
   
         </div>
   

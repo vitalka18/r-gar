@@ -26,7 +26,15 @@
               <a href="tel:78127031264" class="header__phone"><span class="icon-tel"></span>+7 (812) 703-12-64</a>
               <a href="mailto:info@r-garnet.ru" class="header__email"><span class="icon-mail"></span>info@r-garnet.ru</a>
             </div>
-            <div class="header__calback"><button class="btn btn-primary" data-toggle="modal" data-target="#callback">Заказать обратный звонок</button></div>
+            <div class="header__calback">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavigation" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <button class="btn btn-primary" data-toggle="modal" data-target="#callback">Заказать обратный звонок</button>
+            </div>
           </div>
   
           <div class="header__bottom">
@@ -51,7 +59,7 @@
       </div>
     </div>
   
-    <nav class="main-nav">
+    <nav class="main-nav collapse navbar-collapse" id="mainNavigation">
       <div class="container">
         <ul class="nav">
           <li class="nav__item"><a href="#" class="nav__link">О компании</a></li>
@@ -65,7 +73,17 @@
   </header>
   
 
-  <main class="main main_form-page">
+  <main class="main main_inner-page">
+    <div class="container breadcrumbs-container">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Р-Гарнет</a></li>
+
+        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Каталог</a></li>
+
+        <li class="breadcrumbs__item"><span class="breadcrumbs__active">ПОДОБРАТЬ СТАНОК ГИДРОРЕЗКИ </span></li>
+      </ul>
+    </div>
+
     <form class="container calculate-form">
       <h1>ПОДОБРАТЬ СТАНОК ГИДРОРЕЗКИ</h1>
 
@@ -126,7 +144,7 @@
               <div class="col-md-1">
                 <div class="radio">
                   <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
                     <span class="c-radio"></span>
                     <b>Нет</b>
                   </label>
@@ -135,7 +153,7 @@
               <div class="col-md-3">
                 <div class="radio">
                   <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" checked>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1">
                     <span class="c-radio"></span>
                     <b>Односекционная</b>
                   </label>
@@ -144,7 +162,7 @@
               <div class="col-md-4">
                 <div class="radio">
                   <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option1" checked>
+                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option1">
                     <span class="c-radio"></span>
                     <b>Двухсекционная</b> (позволяет менять заполненные биг-бэги без остановки станка)
                   </label>
@@ -153,7 +171,7 @@
               <div class="col-md-4">
                 <div class="radio">
                   <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios4" value="option1" checked>
+                    <input type="radio" name="optionsRadios" id="optionsRadios4" value="option1">
                     <span class="c-radio"></span>
                     <b>Двухсекционная с двумя шламовыми насосами</b> (используется для рабочих столов площадью более 16м2)
                   </label>
@@ -166,7 +184,6 @@
                 <input type="checkbox" value=""><span class="c-box"></span>
                 <b>Система автоматической загрузки листа</b> - Используется для помещений с низкими потолками,  позволяет загружать лист на рабочий стол без использования кран-балки, нет необходимости 
                 кантовать хрупкие материалы.
-                Option one is this and that&mdash;be sure to include why it's great
               </label>
             </div>
 
@@ -239,7 +256,7 @@
             </div>
           </div>
           <div class="col-md-6 col-md-offset-1">
-            <div class="form-calc__figure row">
+            <div class="form-calc__figure clearfix">
               <div class="form-calc__figure-img">
                 <img src="img/form-calc-2.jpg" alt="">
               </div>
@@ -251,7 +268,7 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="">
           <label class="label">Опции режущей головы:</label>
           <p><b><i>Система подачи абразива:</i></b></p>  
 
@@ -259,7 +276,7 @@
             <label>
               <input type="radio" name="optionsRadios4" id="optionsRadios9" value="option1" checked><span class="c-radio"></span>
               <b>100 л</b> - Бункер автоматической подачи гранатового абразива с помощью сжатого воздуха с датчиком нижнего уровня  (100 л~170 кг) 
-              <br><br>
+              
               <img src="img/form-calc-3.jpg" alt="">
             </label>
           </div>
@@ -268,16 +285,16 @@
             <label>
               <input type="radio" name="optionsRadios4" id="optionsRadios10" value="option1"><span class="c-radio"></span>
               <b>200 л</b> - Бункер автоматической подачи гранатового абразива с помощью сжатого воздуха с датчиком нижнего уровня  (200 л~340 кг)
-              <br><br>
+              
               <img src="img/form-calc-4.jpg" alt="">
             </label>
           </div>
 
           <div class="radio">
             <label>
-              <input type="radio" name="optionsRadios" id="optionsRadios11" value="option1"><span class="c-radio"></span>
+              <input type="radio" name="optionsRadios4" id="optionsRadios11" value="option1"><span class="c-radio"></span>
               <b>1000 кг</b> - Бункер хранения гранатового абразива емкостью в один стандартный BigBad. С вертикальной загрузкой кран-балкой.
-              <br><br>
+              
               <img src="img/form-calc-5.jpg" alt="">
             </label>
           </div>
@@ -316,7 +333,7 @@
               <input type="radio" name="optionsRadios4" id="optionsRadios15" value="option1"><span class="c-radio"></span>
               <b>Система лазерного позиционирования </b> - Позволяет быстро и точно определять машинный 
               0» по координатам X и Y.
-              <br><br>
+              
               <img src="img/form-calc-6.jpg" alt="">
             </label>
           </div>
@@ -335,6 +352,10 @@
                 <option value="">Насос высокого давления Trump Line 50/420</option>
               </select>
             </div>
+            <div class="form-group">
+              <img src="img/form-calc-9.jpg" alt="">
+              <img src="img/form-calc-10.jpg" alt="">
+            </div>
             <h4 class="label">Опции насоса:</h4>
             <p class="loghten"><b><i>Система масло-охлаждения:</i></b></p>
             <p><b>Система принудительного охлаждения</b> - 
@@ -352,7 +373,7 @@
                 достаточной теплоотдачей для использования 
                 в климатических условиях Российской 
                 Федерации.
-                <br><br>
+                
                 <img src="img/form-calc-7.jpg" alt="">
               </label>
             </div>
@@ -363,7 +384,7 @@
                 <b><i>Водяное</i></b> – Компактный радиатор, охлаждаемый 
                 проточной водой. Используется для работы в 
                 помещениях с температурой выше +40⁰С.
-                <br><br>
+                
                 <img src="img/form-calc-8.jpg" alt="">
               </label>
             </div>
@@ -571,7 +592,7 @@
   
   <div class="modal fade" id="callback" tabindex="-1" role="dialog">
   
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-sm" role="document">
   
       <div class="modal-content">
   
@@ -612,6 +633,34 @@
             </div>
   
           </form>
+  
+        </div>
+  
+      </div><!-- /.modal-content -->
+  
+    </div><!-- /.modal-dialog -->
+  
+  </div><!-- /.modal -->
+  
+  
+  
+  <div class="modal fade" id="schemaMap" tabindex="-1" role="dialog">
+  
+    <div class="modal-dialog modal-sm" role="document">
+  
+      <div class="modal-content">
+  
+        <div class="modal-header">
+  
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  
+          <h4 class="modal-title">Схема проезда:</h4>
+  
+        </div>
+  
+        <div class="modal-body">
+  
+          <div id="mapModal" class="map modal-map"></div>
   
         </div>
   
