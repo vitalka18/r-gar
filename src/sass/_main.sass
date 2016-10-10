@@ -28,7 +28,9 @@ textarea
   &:hover, &:focus, &:active
     text-decoration: none
     outline: none
-
+.navbar-collapse
+  padding-left: 0
+  padding-right: 0
 .header__phone
   margin-right: 60px
   font-size: 26px
@@ -339,8 +341,10 @@ textarea
       background: #7c7c7c
     img
       max-width: 100%
-      display: block
+      display: none
       margin-top: 20px
+    input:checked~img
+      display: block
 
 
   .c-box
@@ -531,6 +535,9 @@ textarea
     text-align: center
     margin-bottom: 40px
     +clr
+    .inner-title
+      display: block
+      margin-left: 235px
   h2
     color: #515151
     text-align: center
@@ -738,7 +745,6 @@ textarea
 .calculate
   position: relative
   height: 346px
-  padding: 53px 0 0 50px
   margin: 0 0 88px
   background: url(../img/calculate.jpg) center no-repeat
   background-size: cover
@@ -752,6 +758,7 @@ textarea
   &:hover
     opacity: .7
   a
+    padding: 53px 0 0 50px
     position: absolute
     top: 0
     left: 0
@@ -934,13 +941,13 @@ textarea
 
 .footer__nav
   padding: 5px 0
+  text-align: center
   .nav
     margin: 0 0 15px
-    text-align: left
+    text-align: center
   .nav__item
-    margin: 0 50px 0 0
-    &:last-child
-      margin-right: 0
+    margin: 0 20px 0
+
 
   .nav__link
     padding: 0
@@ -1498,9 +1505,10 @@ textarea
     font-size: 23px
 
   .calculate
-    padding: 40px 15px
     text-align: center
     font-size: 30px
+    a
+      padding: 40px 15px
 
   .goods-machine__img
     float: none
@@ -1514,6 +1522,12 @@ textarea
       &:last-child
         float: none
         margin-top: 10px
+  .main_inner-page
+    h1 .inner-title
+      margin-top: 15px
+      margin-left: 0
+  .come-back-link
+    float: none
 
 @media screen and (max-width: 480px)
   .main-promo-banner__text
