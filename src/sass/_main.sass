@@ -1170,6 +1170,15 @@ textarea
 .certificat-row
   font-size: 0
 
+.certificat-row_ibix
+  margin-top: 60px
+  margin-bottom: 50px
+  .certificat__img
+    border-color: #3f64ae
+  .certificat__name
+    min-height: 75px
+    margin-bottom: 10px
+
 .certificat 
   +clr
   float: none !important
@@ -1182,6 +1191,9 @@ textarea
   width: 140px
   border: 1px solid #a39797
   position: relative
+  img
+    width: 100%
+    vertical-align: top
 .certificat__zoom
   position: absolute
   right: 10px
@@ -1278,6 +1290,23 @@ textarea
     background: #fff
 
 
+.ibix-row
+  margin-bottom: 10px
+  font-size: 18px
+  line-height: 1.2
+  img
+    margin-bottom: 10px
+    vertical-align: top
+    &:last-child
+      margin-bottom: 0
+  p
+    margin-bottom: 20px
+  
+  h4
+    font-size: 18px
+    font-weight: bold
+    margin-bottom: 15px
+
 @media screen and (min-width: 768px)
   .modal-dialog.modal-sm
     width: 440px
@@ -1352,8 +1381,13 @@ textarea
 
   .footer
     padding-bottom: 25px
-
+  .goods-machine
+    +clr
 @media screen and (max-width: 767px)
+  .ibix-row
+    margin-bottom: 30px
+    img
+      width: 100%
   .modal-dialog.modal-sm
     width: 100%
   .header__calback
