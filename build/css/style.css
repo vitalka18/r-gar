@@ -1612,9 +1612,10 @@ textarea { resize: none; }
 
 .lang__item { font-size: 16px; display: inline-block; }
 
-.lang__link { color: #5e5e5e; font-weight: 600; text-decoration: none; vertical-align: middle; }
+.lang__link { color: #5e5e5e; font-weight: 600; text-decoration: none; vertical-align: middle; display: block; padding: 3px; }
 .lang__link span { vertical-align: middle; margin-right: 5px; }
-.lang__link:hover, .lang__link:active, .lang__link.active { text-decoration: none; color: #3f64ae; -webkit-transform: scale(1.2); -ms-transform: scale(1.2); -o-transform: scale(1.2); transform: scale(1.2); }
+.lang__link:hover, .lang__link:active { text-decoration: none; color: #3f64ae; }
+.lang__link.active { -webkit-box-shadow: 0 1px 3px rgba(63, 100, 174, 0.12), 0 1px 2px rgba(63, 100, 174, 0.24); box-shadow: 0 1px 3px rgba(63, 100, 174, 0.12), 0 1px 2px rgba(63, 100, 174, 0.24); -webkit-border-radius: 5px; border-radius: 5px; border: 1px solid rgba(63, 100, 174, 0.4); }
 
 .logo { display: block; margin: 17px 0 0 0; }
 
