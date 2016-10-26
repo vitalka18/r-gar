@@ -77,8 +77,27 @@ textarea
     border-radius: 5px
     border: 1px solid rgba(63, 100, 174, 0.4)
 .logo
-  display: block
+  display: inline-block
   margin: 17px 0 0 0
+  transition: opacity .3s
+  img 
+    max-width: 100%
+    vertical-align: bottom
+
+  &:hover,
+  &:focus,
+  &:active
+    opacity: .7
+    text-decoration: none
+    color: rgb(63, 100, 174)
+
+.logo__text
+  display: block
+  font-size: 38px
+  font-weight: bold
+  line-height: 1
+  white-space: pre
+  color: rgb(63, 100, 174)
 
 .main-nav
   background: #efefef
@@ -942,6 +961,27 @@ textarea
   border-top: 1px solid #c6c6c6
   background: #fff
 
+.footer__logo
+  img 
+    max-width: 100%
+    vertical-align: bottom
+
+  &:hover,
+  &:focus,
+  &:active
+    opacity: .7
+    text-decoration: none
+    color: rgb(63, 100, 174)
+
+.footer__logo-text
+  display: block
+  margin-top: 1px
+  font-size: 20px
+  font-weight: bold
+  line-height: 1
+  white-space: pre
+  color: rgb(63, 100, 174)
+
 .footer__nav
   padding: 5px 0
   text-align: center
@@ -1310,6 +1350,59 @@ textarea
     font-weight: bold
     margin-bottom: 15px
 
+.tehnology-section
+  margin: 50px 0 0
+  font-size: 0
+
+.tech-item
+  display: inline-block
+  width: 20%
+  padding: 0 8px
+  margin: 0 0 50px
+  vertical-align: top
+  font-size: 18px
+  text-align: center
+
+.tech-item__preview
+  margin: 0 0 18px
+  img
+    max-width: 100%
+
+.tech-item__text
+  line-height: 1.7
+
+.ol-tech
+  margin: 30px 0
+  font-size: 20px
+  line-height: 1.5
+
+
+.teh-img
+  margin: 30px 0 60px
+
+.ol-tech__main
+  >span
+    font-weight: bold
+    color: #9c2d40
+.ol-tech__inside
+  >span
+    font-weight: bold
+
+.main_teh-page
+  p
+    font-size: 20px
+    margin-bottom: 30px
+    color: #5b5b5b
+  
+  h1
+    margin-bottom: 30px
+  h2
+    margin-top: 30px
+    margin-bottom: 70px
+    font-weight: bold
+    font-size: 24px
+    color: rgba(81, 81, 81, .8)
+
 @media screen and (min-width: 768px)
   .modal-dialog.modal-sm
     width: 440px
@@ -1344,6 +1437,7 @@ textarea
     top: 120px
 
 @media screen and (max-width: 991px)
+  
   .main-promo-banner__text
     top: 60px
     margin: 0 30px
@@ -1384,15 +1478,28 @@ textarea
 
   .footer
     padding-bottom: 25px
+  
   .goods-machine
     +clr
+  
+  .tech-item
+    width: 50%
+
 @media screen and (max-width: 767px)
+  .brand
+    text-align: center
+  
+  .footer__logo
+    margin-bottom: 15px
+
   .ibix-row
     margin-bottom: 30px
     img
       width: 100%
+
   .modal-dialog.modal-sm
     width: 100%
+
   .header__calback
     .btn
       display: block
@@ -1571,3 +1678,6 @@ textarea
     font-size: 16px
     margin: 0
     top: 10px
+
+  .tech-item
+    width: 100%

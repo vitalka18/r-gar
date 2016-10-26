@@ -36,7 +36,25 @@ $(document).ready(function() {
     $('body,html').animate({scrollTop:0},800);
   });
 
-  setEqualHeight($('.base-info-card__img-title'));
+  
+  if ( $(window).width() > 480) {
+    setEqualHeight($('.base-info-card__img-title'));
+    setEqualHeight($('.tech-item__preview'));
+  }
+
+  $(window).resize(function() {
+    if ( $(window).width() > 480) {
+      $('.goods-view, .goods-view__photo').css({'height': 'auto'});
+      setEqualHeight($('.goods-view, .goods-view__photo'));
+
+      $('.base-info-card__img-title').css({'height': 'auto'});
+      $('.tech-item__preview').css({'height': 'auto'});
+      setEqualHeight($('.base-info-card__img-title'));
+      setEqualHeight($('.tech-item__preview'));
+    } else {
+      $('.goods-view, .goods-view__photo').css({'height': 'auto'});
+    }
+  });
 
   $('#lightboxModal').on('show.bs.modal', function (e) {
     var $link = $(e.relatedTarget);
