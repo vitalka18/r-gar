@@ -36,7 +36,16 @@ $(document).ready(function() {
     $('body,html').animate({scrollTop:0},800);
   });
 
-  
+
+  var $video = $('#promoVideo')[0];
+  if ( $video.paused ) {
+    $(document).on('click mousemove', function() {
+      if ( $video.paused ) {
+        $video.play();
+      }
+    });
+  }
+
   if ( $(window).width() > 480) {
     setEqualHeight($('.base-info-card__img-title'));
     setEqualHeight($('.tech-item__preview'));
@@ -72,7 +81,7 @@ $(document).ready(function() {
     window.modalMap.setCenter({lat: mapLat, lng: mapLang});
     window.myModalPlacemark.setOptions({
       position: {
-        lat: mapLat, 
+        lat: mapLat,
         lng: mapLang
       }
     });
@@ -145,7 +154,7 @@ function initMap () {
 
     contactStore.forEach(function(store) {
       var image = 'img/map-2.png';
-      
+
       var beachMarker = new google.maps.Marker({
         position: {lat: store.x, lng: store.y},
         map: myContactMap,
@@ -162,7 +171,7 @@ function initMap () {
     });
 
     var modalImage = 'img/map-2.png';
-      
+
     window.myModalPlacemark = new google.maps.Marker({
       position: {lat: 59.88970, lng: 30.478156},
       map: modalMap,
