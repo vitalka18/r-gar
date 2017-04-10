@@ -8,9 +8,11 @@ $(document).ready(function() {
 
 
   var $video = $('#promoVideo')[0];
+  $video.volume = 1;
   if ( $video.paused ) {
     $(document).on('click mousemove', function() {
       if ( $video.paused ) {
+        $video.volume = 1;
         $video.play();
       }
     });
