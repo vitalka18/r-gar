@@ -594,7 +594,8 @@ textarea
 .main-promo-banner__video
   position: relative
   overflow: hidden
-  margin-bottom: -10%
+  margin-bottom: 0
+  padding-top: 38%
   iframe, video
     position: absolute
     width: 100%
@@ -604,7 +605,7 @@ textarea
     z-index: 1
   .main-promo-banner__video-cover
     position: absolute
-    top: -19.5%
+    top: 0
     right: 0
     bottom: 0
     left: 0
@@ -615,7 +616,9 @@ textarea
     z-index: 5
 
 .main-promo-banner__video-inner
-  position: relative
+  position: absolute
+  top: 0
+  left: 0
   width: 100%
   padding: 56% 0 0
 
@@ -1467,7 +1470,8 @@ textarea
     top: 120px
 
 @media screen and (max-width: 991px)
-
+  .main-promo-banner__video
+    padding-top: 45%
   .main-promo-banner__text
     top: 60px
     margin: 0 30px
