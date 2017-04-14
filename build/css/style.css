@@ -1765,12 +1765,14 @@ textarea { resize: none; }
 .come-back-link:hover { color: #b87881; }
 
 .main-promo-banner { position: relative; }
+.main-promo-banner .main-nav { position: absolute; top: 0; left: 0; width: 100%; z-index: 20; background: rgba(255, 255, 255, 0.7); }
 
 .main-promo-banner__img { width: 100%; min-height: 100%; }
 
 .main-promo-banner__video { position: relative; overflow: hidden; margin-bottom: 0; padding-top: 38%; }
 .main-promo-banner__video iframe, .main-promo-banner__video video { position: absolute; width: 100%; height: 100%; top: -20%; left: 0; z-index: 1; }
-.main-promo-banner__video .main-promo-banner__video-cover { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; background: url("../img/intro-image-triangle.png") center bottom no-repeat; background-size: 100% auto; z-index: 5; }
+.main-promo-banner__video .main-promo-banner__video-cover { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; background: url("../img/pattern.png"); z-index: 5; }
+.main-promo-banner__video .main-promo-banner__video-cover:after { display: block; content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url("../img/intro-image-triangle.png") center bottom no-repeat; background-size: 100% auto; }
 
 .main-promo-banner__video-inner { position: absolute; top: 0; left: 0; width: 100%; padding: 56% 0 0; }
 
@@ -2418,6 +2420,8 @@ textarea { resize: none; }
  .goods-machine:after{ content: " "; display: table; clear: both; }
  .tech-item{ width: 50%; } }
 @media screen and (max-width: 767px){
+ .main-promo-banner{ position: relative; }
+ .main-promo-banner .main-nav{ position: static; background: #efefef; }
  .brand{ text-align: center; }
  .footer__logo{ margin-bottom: 15px; }
  .ibix-row{ margin-bottom: 30px; }

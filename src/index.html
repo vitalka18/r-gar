@@ -12,10 +12,82 @@
 <body>
 <!-- BEGIN  out-->
 <div class="out">
-  //=include partials/header.html
+  <header id="header" class="header">
+    <div class="container header__top-container">
+      <div class="row">
+
+        <div class="col-md-3 col-sm-3 brand">
+          <a href="#" class="logo">
+            <img src="./img/logo.png" alt="Гарнет Лого">
+            <span class="logo__text">Р-Гарнет</span>
+          </a>
+        </div>
+
+        <div class=" col-md-9 col-sm-9">
+          <div class="header__top">
+            <div class="header__contact">
+              <a href="tel:78127031264" class="header__phone"><span class="icon-tel"></span>+7 (812) 703-12-64</a>
+              <a href="mailto:info@r-garnet.ru" class="header__email"><span class="icon-mail"></span>info@r-garnet.ru</a>
+            </div>
+            <div class="header__calback">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavigation" aria-expanded="false">
+                <span class="sr-only">Переключить меню</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <button class="btn btn-primary" data-toggle="modal" data-target="#callback">Заказать обратный звонок</button>
+            </div>
+          </div>
+
+          <div class="header__bottom">
+            <div class="row">
+              <div class="col-lg-4 col-lg-push-8 col-md-5 col-md-push-7 col-sm-6 col-sm-push-6">
+                <ul class="lang">
+                  <li class="lang__item"><a href="" class="lang__link"><span class="icon-ru"></span><span>RU</span></a></li>
+                  <li class="lang__item"><a href="" class="lang__link"><span class="icon-eng"></span><span>ENG</span></a></li>
+                  <li class="lang__item"><a href="" class="lang__link active"><span class="icon-ger"></span><span>DE</span></a></li>
+                </ul>
+              </div>
+
+              <div class="col-lg-8 col-lg-pull-4 col-md-7 col-md-pull-5 col-sm-6 col-sm-pull-6">
+                <form class="header__search">
+                  <input type="search" class="form-control form-control__search form-control_shadow" placeholder="Поиск">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
   <aside class="main-promo-banner">
-    <div class="main-promo-banner__text">ЗАО "Р-ГАРНЕТ" - СТАНКИ ДЛЯ ГИДРОАБРАЗИВНОЙ РЕЗКИ</div>
+    <nav class="main-nav collapse navbar-collapse" id="mainNavigation">
+      <div class="container">
+        <ul class="nav">
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">О компании</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="teh-stanki.html" class="nav__link">Технология</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="calculate-form.html" class="nav__link">Подобрать станок</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="contact.html" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <div class="main-promo-banner__video">
+      <div class="main-promo-banner__text">ЗАО "Р-ГАРНЕТ" - СТАНКИ ДЛЯ ГИДРОАБРАЗИВНОЙ РЕЗКИ</div>
       <div class="main-promo-banner__video-cover"></div>
       <div class="main-promo-banner__video-inner">
         <video id="promoVideo" src="./videos/main_promo.mp4" autobuffer autoplay="autoplay" loop="loop" preload="auto"></video>
