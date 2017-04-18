@@ -586,13 +586,6 @@ textarea
 
 .main-promo-banner
   position: relative
-  .main-nav
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    z-index: 20
-    background: rgba(255, 255, 255, .7)
 
 .main-promo-banner__img
   width: 100%
@@ -1488,7 +1481,9 @@ textarea
 
 @media screen and (max-width: 991px)
   .main-promo-banner__video
-    padding-top: 45%
+    padding-top: 55%
+  .main-promo-banner__video iframe, .main-promo-banner__video video
+    top: 0
   .main-promo-banner__text
     top: 60px
     margin: 0 30px
@@ -1537,11 +1532,6 @@ textarea
     width: 50%
 
 @media screen and (max-width: 767px)
-  .main-promo-banner
-    position: relative
-    .main-nav
-      position: static
-      background: #efefef
   .brand
     text-align: center
 
